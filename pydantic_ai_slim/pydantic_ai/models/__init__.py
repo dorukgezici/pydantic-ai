@@ -295,6 +295,10 @@ def infer_model(model: Model | KnownModelName) -> Model:
         from .ollama import OllamaModel
 
         return OllamaModel(model[7:])
+    elif model.startswith('mlx-lm:'):
+        from .mlx_lm import MLXModel
+
+        return MLXModel(model[7:])
     elif model.startswith('anthropic'):
         from .anthropic import AnthropicModel
 

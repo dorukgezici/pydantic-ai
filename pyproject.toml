@@ -37,7 +37,7 @@ classifiers = [
 ]
 requires-python = ">=3.9"
 
-dependencies = ["pydantic-ai-slim[graph,openai,vertexai,groq,anthropic,mistral,cohere]==0.0.20"]
+dependencies = ["pydantic-ai-slim[graph,openai,vertexai,groq,anthropic,mistral,cohere,mlx-lm]==0.0.20"]
 
 [project.urls]
 Homepage = "https://ai.pydantic.dev"
@@ -63,6 +63,7 @@ lint = [
     "mypy>=1.11.2",
     "pyright>=1.1.388",
     "ruff>=0.6.9",
+    "pre-commit>=4.0.1",
 ]
 docs = [
     "algoliasearch>=4.12.0",
