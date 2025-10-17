@@ -282,6 +282,7 @@ class BaseAdapter(ABC, Generic[RunRequestT, MessageT, EventT, AgentDepsT, Output
                 accept=accept,
             ),
             headers=self.response_headers,
+            media_type=accept,
         )
 
     @classmethod
